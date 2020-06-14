@@ -1,0 +1,145 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: rgb(223, 219, 229);
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+#header {
+	position: relative;
+	text-align: center;
+	color: white;
+	z-index: 2;
+}
+
+#header p {
+	position: relative;
+	bottom: 16px;
+	vertical-align: middle;
+}
+
+#title {
+	font-size: 48px;
+	margin: auto;
+}
+
+#title2 {
+	font-size: 20px;
+}
+
+#cover-div {
+	position: relative;
+	margin: auto;
+	opacity: 1;
+	bottom: 120px;
+}
+
+#cover {
+	position: relative;
+	max-width: 100%;
+	margin: auto;
+	z-index: 1;
+	opacity: 0.7;
+}
+
+#main {
+	margin: 0;
+	padding: 0;
+}
+
+#content {
+	display: grid;
+	grid-template-areas:
+		"img tribute praise1"
+		"praise2 tribute img2"
+		"img3 tribute praise3"
+}
+
+#img-div {
+	position: relative;
+	grid-area: img;
+	bottom: 20px;
+	margin: auto;
+}
+
+#image {
+	display: block;
+	margin: auto;
+	width: 400px;
+	max-width: 100%;
+}
+
+#img-caption {
+	text-align: center;
+}
+
+#img-div-two {
+	grid-area: img2;
+	margin: auto;
+}
+
+#image-two {
+	display: block;
+	margin: auto;
+	width: 400px;
+	max-width: 100%
+}
+
+#img-caption-two {
+	text-align: center;
+}
+
+#img-div-three {
+	grid-area: img3;
+	margin:auto;
+}
+
+#image-three {
+	display: block;
+	margin: auto;
+	width: 400px;
+	max-width: 100%
+}
+
+#img-caption-three {
+	text-align: center;
+}
+
+#tribute-info {
+	grid-area: tribute;
+	justify-self: center;
+	background-color: rgb(240, 240, 240);
+	padding-bottom: 50px;
+}
+
+#tribute-info h2 {
+	text-align: center;
+}
+
+#tribute-link {
+	display: block;
+	text-align: center;
+}
+
+#praise1 {
+	grid-area: praise1;
+}
+
+#praise2 {
+	grid-area: praise2;
+}
+
+#praise3 {
+	grid-area: praise3;
+}
+
+.praise {
+	margin: auto;
+	padding-left: 10px;
+	color: rgb(0, 0, 255);
+	font-size: 32px;
+	font-family: "Dancing Script", serif;
+}
